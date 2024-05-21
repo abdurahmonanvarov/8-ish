@@ -423,7 +423,7 @@ template {
   font-size: 16px;
 }
 
-.humans .continer__humans button {
+.humans .continer__humans .button button {
   border: none;
   width: 260px;
   height: 60px;
@@ -469,8 +469,12 @@ template {
   margin-bottom: 50px;
   font-size: 1.12em;
 }
-.humans .continer__humans button {
-  margin-left: 465px;
+.humans .continer__humans .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.humans .continer__humans .button button {
   margin-bottom: 120px;
   cursor: pointer;
 }
@@ -586,10 +590,27 @@ input {
   .continer .header__link {
     display: none;
   }
-  .continer input {
-    display: none;
-  }
   .continer label {
     display: block;
+  }
+  .continer input :checked .header__link {
+    display: block;
+  }
+  .continer__humans button {
+    padding-left: 10px;
+  }
+  .malumot .continer__malumot .cover {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .malumot .continer__malumot .cover .cover__info {
+    width: 280px;
+  }
+  .malumot .continer__malumot .cover .cover__info img {
+    width: 249px;
+  }
+  .info__numb {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

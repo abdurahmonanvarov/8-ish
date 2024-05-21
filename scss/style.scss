@@ -53,11 +53,15 @@
             margin-bottom: 50px;
             font-size: 1.12em;
         }
-        button{
+        .button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           button{
             @extend %buttonstyle;
-            margin-left: 465px;
             margin-bottom: 120px;
             cursor: pointer;
+           }
         }
     }
 }
@@ -169,15 +173,39 @@ input{
 @media screen and (max-width: 768px) {
     .continer{
         max-width: 640px;
+
         .header__link{
-            display: none;
-        }
-        input{
             display: none;
         }
         label{
             display: block;
         }
-        input:
+        input :checked{
+            .header__link{
+                display: block;
+            }
+        }
+       
+    }
+    .continer__humans{
+        button{
+            padding-left: 10px;
+        }
+    }
+    .malumot .continer__malumot{
+        .cover{
+            width: 600px;
+            display: flex;
+            flex-wrap: wrap;
+            .cover__info{
+                width: 280px;
+                img{
+                    width: 249px;
+                }
+            }
+        }
+    }
+    .info__numb{
+        width: 100%;
     }
 }
